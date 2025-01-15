@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<link rel="stylesheet" href="css/signup-styles.css">
+</head>
+<body>
+	<div class="signup-container">
+		<header class="signup-header">
+			<div class="main-button">
+				<a href="main.html">🏠</a>
+			</div>
+			<div class="logo">Music Net</div>
+		</header>
+
+		<main class="signup-main">
+			<h2 class="signup-title">Music Net 회원가입</h2>
+			<form class="signup-form">
+				<label for="email">Email</label>
+				<div class="email-container">
+					<input type="text" id="email"
+						placeholder="Enter your email address" required> <select
+						id="email-domain">
+						<option value="naver.com">@naver.com</option>
+						<option value="daum.net">@daum.net</option>
+						<option value="gmail.com">@gmail.com</option>
+						<option value="deu.ac.kr">@deu.ac.kr</option>
+					</select>
+				</div>
+
+				<label for="username">UserName</label> <input type="text"
+					id="username" placeholder="Enter your username" required>
+				<p class="input-hint">3글자로 해주세요.</p>
+
+				<label for="password">Password</label> <input type="password"
+					id="password" placeholder="Enter your password" required>
+				<p class="input-hint">9글자로 해주세요.</p>
+
+				<div class="terms">
+					<input type="checkbox" id="terms" required> <label
+						for="terms">약관에 동의합니다. <a href="#">Terms of Use</a>.
+					</label>
+				</div>
+
+				<button type="submit" class="signup-button">회원가입</button>
+			</form>
+
+			<p class="login-link">
+				회원가입이 이미 되어있으신가요? <a href="login.html">로그인</a>.
+			</p>
+		</main>
+
+		<footer class="signup-footer">
+			<div class="footer-links">
+				<a href="#">About</a> <a href="#">Help</a> <a href="#">Privacy
+					Policy</a> <a href="#">Terms of Service</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

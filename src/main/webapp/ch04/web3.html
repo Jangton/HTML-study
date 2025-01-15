@@ -1,0 +1,100 @@
+<!-- web3.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블 태그</title>
+<style>
+	table, th, td {
+		border : solid 1px red;
+		border-collapse: collapse;
+	}
+	th, td {
+		padding: 10px 20px
+	}
+</style>
+</head>
+<body>
+	<h2>상품구성</h2>
+	<table>
+			<tr>
+			<!-- th는 bold와 alingn이 center -->
+				<th>용도</th>
+				<th>중량</th>
+				<th>갯수</th>
+				<th>가격</th>
+			</tr>
+			<tr>
+				<th>선물용</th>
+				<th>3Kg</th>
+				<th>11~16과</th>
+				<th>35,000원</th>
+			</tr>
+			<tr>
+				<th>선물용</th>
+				<th>5Kg</th>
+				<th>18~26과</th>
+				<th>5,2000원</th>
+			</tr>
+			<tr>
+				<th>가정용</th>
+				<th>3Kg</th>
+				<th>11~16과</th>
+				<th>30,000원</th>
+			</tr>
+			<tr>
+				<th>가정용</th>
+				<th>5Kg</th>
+				<th>18~26과</th>
+				<th>47,000원</th>
+			</tr>
+	</table>
+		<p>
+	<table>
+			<tr>
+			<!-- th는 bold와 alingn이 center -->
+				<th>용도</th>
+				<th>중량</th>
+				<th>갯수</th>
+				<th>가격</th>
+			</tr>
+			<tr>
+				<th rowspan="2">선물용</th>
+				<th>3Kg</th>
+				<th>11~16과</th>
+				<th>35,000원</th>
+			</tr>
+			<tr>
+				<th>5Kg</th>
+				<th>18~26과</th>
+				<th>5,2000원</th>
+			</tr>
+			<tr>
+				<th rowspan="2">가정용</th>
+				<th>3Kg</th>
+				<th>11~16과</th>
+				<th>30,000원</th>
+			</tr>
+			<tr>
+				<th>5Kg</th>
+				<th>18~26과</th>
+				<th>47,000원</th>
+			</tr>
+	</table>
+		<p>
+	<table>
+		<tr>
+			<td align="center";>1</td>
+			<td align="center";>2</td>
+			<td align="center";>3</td>
+		</tr>
+		<tr>
+			<td align="center";>4</td>
+			<td colspan="2">5</td>
+		</tr>
+		<tr>
+			<td colspan="3">6</td>
+		</tr>
+	</table>
+</body>
+</html>

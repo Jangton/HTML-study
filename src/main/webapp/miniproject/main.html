@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Net</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<i class="fa-solid fa-music"></i> Music Net
+		</div>
+		<!-- 장르 선택 바 -->
+		<nav class="nav-menu">
+			<a href="" id="band-button">밴드</a>
+			<a href="" id="kpop-button">K-POP</a>
+			<a href="" id="qkffkem-button">발라드</a>
+			<a href="" id="pop-button">POP</a>
+			<a href="" id="jazz-button">JAZZ</a>
+		</nav>
+		<div class="search-container">
+			<input type="text" id="search-bar"
+				placeholder="Search for artist, album, or track" />
+			<div class="dropdown" id="dropdown-menu">
+				<ul>
+					<li>Electronic</li>
+					<li>Metal</li>
+					<li>Rock</li>
+					<li>Alternative</li>
+					<li>Hip-Hop/Rap</li>
+					<li>Experimental</li>
+					<li>Punk</li>
+					<li>Pop</li>
+					<li>Ambient</li>
+					<li>Browse All</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 로그인, 회원가입 바 -->
+		<div class="auth-links">
+			<a href="signup.html">Sign up</a> <a href="login.html">Log in</a>
+		</div>
+	</header>
+	<!-- 앨범을 둘러볼 수 있는 div태그 -->
+	<main class="main-container">
+		<!-- Main content (left) -->
+		<section class="main-content" id="main-content">
+			<img src="images/teambaby.jpg" alt="검정치마 - TEAMBABY" class="main-image"
+				id="main-image">
+			<div class="overlay" id="main-overlay">
+				<h1>검정치마 - TEAMBABY</h1>
+				<p>5월 30일, 2017년</p>
+				<p>이 앨범에서는 사랑, 그리고 보고 싶어지는 그리움을 노래했다. 지금 사랑을 하고 있는 당신과, 그런 당신의
+					편에 서 있는 사람을 위한 앨범이다.(조휴일)</p>
+			</div>
+		</section>
+
+		<aside class="side-content">
+			<div class="card">
+				<img src="images/realize.jpg" alt="실리카겔 EP-Machine Boy">
+				<p>
+					실리카겔 EP-Machine Boy<br>2023.04.25. (화) 발매
+				</p>
+			</div>
+			<div class="card">
+				<img src="images/monkeyhotel.jpg" alt="잔나비 MONKEY HOTEL">
+				<p>
+					잔나비 MONKEY HOTEL<br>2016.08.04. (목) 발매
+				</p>
+			</div>
+			<div class="card">
+				<img src="images/animal.jpg" alt="쏜애플 2nd MINI Album(동물)">
+				<p>
+					쏜애플<br>2nd MINI Album<br>(동물)<br>2023.08.28. (월) 발매
+				</p>
+			</div>
+		</aside>
+		<!-- 팝업 바 -->
+		<div class="popup-bar" id="popup-bar">
+			<div class="popup-item">
+				<a href="main.html">앨범 목록
+			</div>
+			<div class="popup-item">
+				<a href="signup.html">회원 가입
+			</div>
+			<div class="popup-item">
+				<a href="login.html">로그인
+			</div>
+			<div class="popup-item">
+				<a href="store.html">악기
+			</div>
+			<div class="popup-item">
+				<a href="notice.html">게시판
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<p>
+			<b>출처 : 이 사이트는 bandcamp 사이트를 참고했으며, 앨범을 알려주고 악기들을 볼 수 있는 사이트 입니다.</b>
+		</p>
+		<p>원하는 가수가 없더라도 편하고 재미있게 즐겨주시면 감사하겠습니다!</p>
+	</footer>
+	<!-- JavaScript 파일 연결 -->
+	<script src="script.js"></script>
+</body>
+</html>

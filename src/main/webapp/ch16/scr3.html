@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	//문자열을 숫자로 변형
+	a = '123';
+	b = '456';
+	document.write(a+b+"<br>");
+	c = parseInt(a);
+	d = parseInt(b);
+	document.write(c+d+"<p>");
+	//연산자
+	let userNumber = prompt("숫자를 입력하세요.");
+	if(userNumber%3==0) {
+		alert("3의 배수입니다.");
+	} else {
+		alert("3의 배수가 아닙니다.")
+	}
+	let answer = userNumber%3==0?"3의 배수입니다.":"3의 배수가 아닙니다.";
+	document.write(answer)
+</script>
+</body>
+</html>

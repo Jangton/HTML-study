@@ -1,0 +1,193 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-menu a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-menu:hover {
+  font-color: gray;
+}
+
+.search-bar input {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.store-list {
+	margin-left: 10px;
+}
+
+.store-list .container .title ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+.store-list .container .title ul li {
+	display: inline;
+	margin-right: 30px;
+}
+
+.store-list .container .title ul li a {
+	text-decoration: none;
+	color: #444;
+}
+
+.store-list .container .sestion-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.store-list .container .sestion-list .card {
+	border: 1px solid #eee;
+	border-radius: 5px;
+	height: 350px;
+	width: 250px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.store-list .container .sestion-list .card img {
+	height: 200px;
+	width: 250px;
+}
+
+.store-list .container .sestion-list .card .text p {
+	font-size: 14px;
+	opacity: .8;
+}
+
+.store-list .container .sestion-list .card .text button {
+	background: black;
+	color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 10px;
+	transition: .5s ease;
+}
+
+.store-list .container .sestion-list .card .text button:hover {
+	transition: .5s ease;
+	border: 2px solid black;
+	background: transparent;
+	color: black;
+}
+
+.auth-links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+}
+/*드롭다운 메뉴*/
+.search-container {
+  position: relative;
+  width: 300px;
+  margin-right: 300px;
+}
+
+#search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.dropdown {
+  display: none; /* 처음에는 숨김 */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown li {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background: #f0f0f0;
+}
+/* 팝업 바 스타일 */
+.popup-bar {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  width: 150px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.popup-item {
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  text-decoration: none; /* 기본 밑줄 제거 */
+  color: #333; /* 기본 텍스트 색상 */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* 애니메이션 추가 */
+}
+
+.popup-item:last-child {
+  border-bottom: none; /* 마지막 항목에는 경계선 제거 */
+}
+
+.popup-item:hover {
+  background-color: #f0f0f0; /* 배경색 변경 */
+  color: #6200ea; /* 호버 시 텍스트 색상 변경 */
+}
+a {
+  text-decoration: none;
+  color: #333;
+}

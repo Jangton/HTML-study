@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/event.css">
+</style>
+</head>
+<body>
+	<div id="item">
+		<img alt="" src="images/star.jpg">
+		<button id="open" class="over">프로필 상세 보기</button>
+		<div id="desc" class="detail">
+			<h4>마동석 마블리</h4>
+			<p>
+				이름 : 마동석, 학력 : 피자스쿨
+				출연작 : 성난 황소, 범죄 도시, 이웃집, 범죄와의 전쟁, 나쁜녀석들, 이터널스, 부산행
+				개요 : 영화배우
+				여담
+				- 주먹이 강함.
+				- 걍 다 때려 잡음.	
+			</p>
+			<button id="close">프로필 설명 닫기</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function showDetail() {
+			document.querySelector("#desc").style.display = 'block';
+			document.querySelector("#open").style.display = 'none';
+		}
+		function hideDetail() {
+			document.querySelector("#desc").style.display = 'none';
+			document.querySelector("#open").style.display = 'block';
+		}
+	</script>
+</body>
+</html>
+
+
+

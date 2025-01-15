@@ -1,0 +1,35 @@
+<!-- frm1.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function loginChk() {
+		//alert("호출")
+		//v = document.frm1.id.value;
+		//alert(v);
+		//console.log("value:" + v);
+		if(document.frm1.id.value=="") {
+			alert("아이디를 입력하세요.");
+			document.frm1.id.focus();
+			return;	//함수 빠져나감
+		}
+		if(document.frm1.pwd.value=="") {
+			alert("비밀번호를 입력하세요.");
+			document.frm1.pwd.focus();
+			return;	//함수 빠져나감
+		}
+		document.frm1.submit();		//서버로 제출
+	}
+</script>
+</head>
+<body>
+		<form name="frm1" method="post" action="form_data.jsp">
+			id : <input type="text" name="id" value=""><br> 
+			pwd : <input type="password" name="pwd" value=""><br> 
+			<input type="submit" value="로그인">
+			<input type="button" value="로그인2" onclick="loginChk()">
+		</form>
+</body>
+</html>
